@@ -1,0 +1,38 @@
+#home {
+    width: 100%;
+    height: 100vh;
+    background: url('../../assets/home-image.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+    header {
+        width: 100%;
+        color: #fff;
+
+        .title {
+            font-size: 3rem;
+            margin-bottom: 1.3rem;
+
+            span {
+                display: inline-block;
+                padding-bottom: .5rem;
+                border-bottom: 3px solid var(--base-color);
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            width: 40%;
+            margin-bottom: 3rem;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            background: var(--base-color);
+            color: #fff;
+            border-radius: 25px;
+        }
+    }
+}

@@ -1,0 +1,123 @@
+:root {
+  --base-color: #7ED957;
+  --body-font: "Montserrat", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0.8rem 0.6rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav_bar {
+  width: 100%;
+  flex-direction: column;
+  position: fixed;
+}
+#nav_bar #anouncment_bar {
+  width: 100%;
+  background: #fff;
+}
+#nav_bar #anouncment_bar .container {
+  justify-content: space-between;
+}
+#nav_bar #anouncment_bar .container .social-links {
+  gap: 0.6rem;
+  font-size: 1.2rem;
+}
+#nav_bar #anouncment_bar .container .social-links i {
+  color: var(--base-color);
+}
+#nav_bar #fc-nav {
+  width: 100%;
+  justify-content: space-between;
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4235294118);
+}
+#nav_bar #fc-nav .container {
+  justify-content: space-between;
+}
+#nav_bar #fc-nav .container .logo {
+  align-items: center;
+}
+#nav_bar #fc-nav .container .logo img {
+  width: 5rem;
+}
+#nav_bar #fc-nav .container .logo h3 {
+  font-size: 1.6rem;
+  color: #fff;
+}
+#nav_bar #fc-nav .container .logo h3 span {
+  color: var(--base-color);
+}
+#nav_bar #fc-nav .container .menu {
+  gap: 1.3rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#nav_bar #fc-nav .container .menu a {
+  color: #fff;
+}
+#nav_bar #fc-nav .container .menu a span {
+  text-transform: none;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background: url("../../assets/home-image.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+#home header {
+  width: 100%;
+  color: #fff;
+}
+#home header .title {
+  font-size: 3rem;
+  margin-bottom: 1.3rem;
+}
+#home header .title span {
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--base-color);
+}
+#home header p {
+  font-size: 1.2rem;
+  width: 40%;
+  margin-bottom: 3rem;
+}
+#home header .btn {
+  padding: 1rem 2rem;
+  background: var(--base-color);
+  color: #fff;
+  border-radius: 25px;
+}/*# sourceMappingURL=style.css.map */

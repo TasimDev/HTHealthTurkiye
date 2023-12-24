@@ -21,6 +21,10 @@ li {
   list-style: none;
 }
 
+img {
+  width: 100%;
+}
+
 .container {
   max-width: 1800px;
   margin: 0 auto;
@@ -33,10 +37,22 @@ li {
   align-items: center;
 }
 
+.title {
+  font-size: 3rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background: var(--base-color);
+  color: #fff;
+  border-radius: 25px;
+}
+
 #nav_bar {
   width: 100%;
   flex-direction: column;
   position: fixed;
+  z-index: 10;
 }
 #nav_bar #anouncment_bar {
   width: 100%;
@@ -102,7 +118,6 @@ li {
   color: #fff;
 }
 #home header .title {
-  font-size: 3rem;
   margin-bottom: 1.3rem;
 }
 #home header .title span {
@@ -115,9 +130,41 @@ li {
   width: 40%;
   margin-bottom: 3rem;
 }
-#home header .btn {
-  padding: 1rem 2rem;
-  background: var(--base-color);
-  color: #fff;
-  border-radius: 25px;
+
+#about .container {
+  position: relative;
+}
+#about .container .quote {
+  background: #fff;
+  position: absolute;
+  display: block;
+  width: 90%;
+  top: -400%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 3rem;
+  text-align: center;
+  font-size: 2rem;
+}
+#about .container_about {
+  display: flex;
+  padding: 15rem 0rem 3rem 0rem;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+#about .container_about header {
+  width: 50%;
+}
+#about .container_about header h2 {
+  margin-bottom: 2rem;
+}
+#about .container_about header article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+#about .container_about .image {
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */

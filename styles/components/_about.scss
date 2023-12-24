@@ -1,0 +1,50 @@
+#about {
+
+
+    .container {
+        position: relative;
+
+        .quote {
+            background: #fff;
+            position: absolute;
+            display: block;
+            width: 90%;
+            top: -400%;
+            left: 50%;
+            transform: translate(-50%);
+            padding: 3rem;
+            text-align: center;
+
+            font-size: 2rem;
+        }
+    }
+
+    .container_about {
+        display: flex;
+        padding: 15rem 0rem 3rem 0rem;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+
+        header {
+            width: 50%;
+
+            h2 {
+                margin-bottom: 2rem;
+            }
+
+            article {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                margin-bottom: 4rem;
+            }
+
+        }
+
+        .image {
+            width: 50%;
+        }
+    }
+
+}

@@ -54,7 +54,7 @@ serviceMoreInfo.forEach(btn => {
         </div>
         <div class="close-btn" onclick="closeService()"><i class="fa-solid fa-circle-xmark"></i></div>
     </div>`
-     
+
         servicePage.innerHTML = servicePageData;
     })
 

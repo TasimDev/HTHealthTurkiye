@@ -1,8 +1,18 @@
 #nav_bar {
     width: 100%;
     flex-direction: column;
-    position: fixed;
     z-index: 10;
+    transition: all .3s ease-in-out;
+    position: fixed;
+
+    &.sticky {
+        transform: translateY(-32%);
+
+        #fc-nav {
+            background: rgb(9, 41, 35);
+            border-bottom: 1px solid transparent;
+        }
+    }
 
     #anouncment_bar {
         width: 100%;
@@ -28,6 +38,8 @@
         justify-content: space-between;
         backdrop-filter: blur(25px);
         border-bottom: 1px solid #ffffff6c;
+        transition: all .3s ease-in-out;
+
 
         .container {
             justify-content: space-between;

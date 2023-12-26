@@ -5,6 +5,11 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 15rem;
+}
+
 body {
     font-family: var(--body-font);
     position: relative;

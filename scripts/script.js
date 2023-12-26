@@ -64,6 +64,22 @@ function closeService() {
     servicePage.classList.remove('active');
     servicePageData = '';
 }
+let headerNav = document.querySelector('#nav_bar');
+let anouncmentBar = document.querySelector('#anouncment_bar');
+let fcNav = document.querySelector('#fc-nav');
+let lastScrollTop = 0;
 
+window.addEventListener("scroll", () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    let width = window.innerWidth;
+    if (scrollTop > 100) {
+
+        headerNav.classList.add('sticky')
+
+    } else {
+        headerNav.classList.remove('sticky');
+    }
+
+})
 
 

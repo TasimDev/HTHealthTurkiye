@@ -331,4 +331,29 @@ img {
 }
 #contacts .container .contact_elements ul {
   display: flex;
+  gap: 5rem;
+  color: #fff;
+}
+#contacts .container .contact_elements ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.4rem;
+  width: 300px;
+}
+#contacts .container .contact_elements ul li .contat_elemet_title {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+#contacts .container .contact_elements ul li p {
+  font-size: 14px;
+  opacity: 0.6;
+}
+#contacts .container .contact_elements ul li .icon {
+  font-size: 35px;
+  color: #fff;
+}
+#contacts .container .contact_elements ul li a {
+  color: greenyellow;
 }/*# sourceMappingURL=style.css.map */

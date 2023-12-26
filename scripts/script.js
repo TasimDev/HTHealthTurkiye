@@ -1,6 +1,7 @@
 
 const cardSection = document.querySelector('#card-section');
 let card = '';
+
 function createCart() {
     servicesData.forEach(service => {
         card += `<div class="card" data="${service.id}">

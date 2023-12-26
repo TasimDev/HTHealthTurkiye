@@ -236,8 +236,15 @@ img {
   border-radius: 15px;
   cursor: pointer;
 }
+#services .container .wrapper .cards .card .card-info .card-body {
+  opacity: 0;
+  transition: all 0.75s ease-in-out;
+}
 #services .container .wrapper .cards .card:hover .card-info {
   top: 0;
+}
+#services .container .wrapper .cards .card:hover .card-info .card-body {
+  opacity: 1;
 }
 
 #services_page {

@@ -66,7 +66,7 @@ const servicesData = [
     {
         id: 5,
         image: {
-            img: 'assets/hirurgiya.jpg',
+            img: 'assets/cosmetic.jpg',
             alt: 'Естетичната медицина в Турция'
         },
         title: 'Естетичната медицина в Турция',

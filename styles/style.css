@@ -526,7 +526,7 @@ img {
 }
 @media screen and (max-width: 700px) {
   #nav_bar.sticky {
-    transform: translateY(-40%);
+    transform: translateY(-43%);
   }
   #contacts .container .contact_elements ul {
     flex-direction: column;
@@ -537,16 +537,16 @@ img {
 }
 @media screen and (max-width: 850px) {
   #nav_bar.sticky {
-    transform: translateY(-41.8%);
+    transform: translateY(-44%);
   }
   #nav_bar #fc-nav .container .menu {
     display: none;
   }
   #nav_bar #fc-nav .container a header .logo-img {
-    width: 4rem;
+    width: 3rem;
   }
   #nav_bar #fc-nav .container a header .nav-title {
-    font-size: 1.5em;
+    font-size: 1rem;
   }
   #nav_bar #fc-nav .container .menu-btn {
     display: flex;

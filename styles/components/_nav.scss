@@ -4,9 +4,11 @@
     z-index: 10;
     transition: all .3s ease-in-out;
     position: fixed;
+    top: 0;
+    left: 0;
 
     &.sticky {
-        transform: translateY(-32%);
+        transform: translateY(-33%);
 
         #fc-nav {
             background: rgb(9, 41, 35);

@@ -64,9 +64,11 @@ img {
   z-index: 10;
   transition: all 0.3s ease-in-out;
   position: fixed;
+  top: 0;
+  left: 0;
 }
 #nav_bar.sticky {
-  transform: translateY(-32%);
+  transform: translateY(-33%);
 }
 #nav_bar.sticky #fc-nav {
   background: rgb(9, 41, 35);

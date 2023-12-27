@@ -66,6 +66,9 @@
                 font-size: 1.1rem;
                 text-transform: uppercase;
                 font-weight: 500;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 a {
                     color: #fff;
@@ -75,8 +78,79 @@
                     }
                 }
             }
+
+            .menu-btn {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: #fff;
+                border: none;
+                display: none;
+                font-size: 1.2rem;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                i {
+                    color: rgb(9, 41, 35);
+
+                }
+            }
         }
 
 
     }
+
+
+}
+
+#mobile-nav {
+    width: 70%;
+    background: #fff;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: -14px 5px 171px -75px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -14px 5px 171px -75px rgba(0, 0, 0, 0.75);
+    box-shadow: -14px 5px 171px -75px rgba(0, 0, 0, 0.75);
+    transition: all .3s ease-in-out;
+    transform: translateX(100%);
+    display: none;
+    z-index: 100;
+
+    .menu {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        text-transform: uppercase;
+        position: relative;
+
+        li {
+            a {
+                color: rgb(9, 41, 35);
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+        }
+
+        button {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            position: absolute;
+            right: 30px;
+            top: 80px;
+            cursor: pointer;
+            color: rgb(9, 41, 35);
+
+        }
+    }
+
 }

@@ -115,12 +115,72 @@ img {
   font-size: 1.1rem;
   text-transform: uppercase;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #nav_bar #fc-nav .container .menu a {
   color: #fff;
 }
 #nav_bar #fc-nav .container .menu a span {
   text-transform: none;
+}
+#nav_bar #fc-nav .container .menu-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+  display: none;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#nav_bar #fc-nav .container .menu-btn i {
+  color: rgb(9, 41, 35);
+}
+
+#mobile-nav {
+  width: 70%;
+  background: #fff;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -14px 5px 171px -75px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-in-out;
+  transform: translateX(100%);
+  display: none;
+  z-index: 100;
+}
+#mobile-nav .menu {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-transform: uppercase;
+  position: relative;
+}
+#mobile-nav .menu li a {
+  color: rgb(9, 41, 35);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+#mobile-nav .menu button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  position: absolute;
+  right: 30px;
+  top: 80px;
+  cursor: pointer;
+  color: rgb(9, 41, 35);
 }
 
 #home {
@@ -338,10 +398,16 @@ img {
   justify-content: space-evenly;
   align-items: center;
 }
+#contacts .container header {
+  width: 33.3333333333%;
+}
 #contacts .container .line {
   width: 3px;
   height: 160px;
   background-color: #fff;
+}
+#contacts .container .contact_elements {
+  width: 33.3333333333%;
 }
 #contacts .container .contact_elements ul {
   display: flex;
@@ -354,7 +420,7 @@ img {
   align-items: center;
   text-align: center;
   gap: 0.4rem;
-  width: 300px;
+  width: 50%;
 }
 #contacts .container .contact_elements ul li .contat_elemet_title {
   font-size: 1.25em;
@@ -388,4 +454,124 @@ img {
 #footer .info {
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1400px) {
+  #contacts .container heder {
+    width: 50%;
+  }
+  #contacts .container .contact_elements {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .btn {
+    padding: 0.6rem 1rem;
+  }
+  #home {
+    text-align: center;
+  }
+  #home header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #home header p {
+    width: 90%;
+  }
+  #services_page .wrapper {
+    flex-direction: column-reverse;
+  }
+  #services_page .wrapper .info {
+    width: 100%;
+  }
+  #services_page .wrapper .info .article {
+    overflow: auto;
+  }
+  #services_page .wrapper .image {
+    display: none;
+  }
+  #about .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #about .container .quote h3 {
+    font-size: 1.6rem;
+  }
+  #about .container header {
+    width: 100%;
+  }
+  #about .container .image {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  #contacts .container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  #contacts .container header {
+    width: 100%;
+  }
+  #contacts .container .line {
+    display: none;
+  }
+  #contacts .container .contact_elements {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #nav_bar.sticky {
+    transform: translateY(-40%);
+  }
+  #contacts .container .contact_elements ul {
+    flex-direction: column;
+  }
+  #contacts .container .contact_elements ul li {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  #nav_bar.sticky {
+    transform: translateY(-41.8%);
+  }
+  #nav_bar #fc-nav .container .menu {
+    display: none;
+  }
+  #nav_bar #fc-nav .container a header .logo-img {
+    width: 4rem;
+  }
+  #nav_bar #fc-nav .container a header .nav-title {
+    font-size: 1.5em;
+  }
+  #nav_bar #fc-nav .container .menu-btn {
+    display: flex;
+  }
+  #mobile-nav {
+    display: flex;
+  }
+  #mobile-nav.active {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 530px) {
+  .title {
+    font-size: 2rem;
+  }
+  #anouncment_bar {
+    font-size: 0.8rem;
+  }
+  #footer {
+    padding: 2rem 0rem;
+  }
+  #contacts {
+    padding: 2rem 3rem;
+  }
+  #services {
+    padding: 6rem 0rem;
+  }
 }/*# sourceMappingURL=style.css.map */

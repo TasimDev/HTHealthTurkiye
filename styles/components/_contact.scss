@@ -8,11 +8,17 @@
         text-align: center;
     }
 
+
+
     .container {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+
+        header {
+            width: calc(100%/3);
+        }
 
         .line {
             width: 3px;
@@ -21,6 +27,8 @@
         }
 
         .contact_elements {
+            width: calc(100%/3);
+
             ul {
                 display: flex;
                 gap: 5rem;
@@ -32,7 +40,7 @@
                     align-items: center;
                     text-align: center;
                     gap: .4rem;
-                    width: 300px;
+                    width: 50%;
 
                     .contat_elemet_title {
                         font-size: 1.25em;

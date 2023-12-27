@@ -82,4 +82,22 @@ window.addEventListener("scroll", () => {
 
 })
 
+const menuBtn = document.querySelector('.menu-btn');
+const closeMenuBtn = document.querySelector('.nav-close-btn');
+const mobileNav = document.querySelector('#mobile-nav');
+const mobileNavLinks = document.querySelectorAll('.mobile-links');
+
+menuBtn.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+})
+
+closeMenuBtn.addEventListener('click', () => {
+    mobileNav.classList.remove('active');
+})
+
+mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileNav.classList.remove('active');
+    })
+})
 

@@ -482,12 +482,13 @@ img {
   }
   #services_page .wrapper {
     flex-direction: column-reverse;
+    width: 100%;
   }
   #services_page .wrapper .info {
     width: 100%;
   }
   #services_page .wrapper .info .article {
-    overflow: auto;
+    font-size: 0.7rem;
   }
   #services_page .wrapper .image {
     display: none;

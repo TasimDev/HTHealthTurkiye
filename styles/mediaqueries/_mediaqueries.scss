@@ -38,12 +38,13 @@
 
         .wrapper {
             flex-direction: column-reverse;
+            width: 100%;
 
             .info {
                 width: 100%;
 
                 .article {
-                    overflow: auto;
+                    font-size: .7rem;
                 }
             }
 

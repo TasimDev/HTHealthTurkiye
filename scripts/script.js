@@ -47,7 +47,7 @@ serviceMoreInfo.forEach(btn => {
                 <p>${serviceData.info.big_info.info_body}</p>
                 <p>${serviceData.info.big_info.info_footer}</p>
             </div>
-            <a href="#contacts" title="Свържете се с HTHealthTurkiye" class="btn">Свържете се с нас</a>
+            <a href="#contacts" title="Свържете се с HTHealthTurkiye" class="btn" onclick="closeService()">Свържете се с нас</a>
         </div>
         <div class="image">
             <img src="${serviceData.image.img}" alt="${serviceData.image.alt}">
